@@ -1,3 +1,1 @@
-# Trivia Duo
-
-Website for Trivia Duo
+Trivia Duo website (static). Open index.html.
