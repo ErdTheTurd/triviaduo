@@ -3,35 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trivia Duo — head-to-head trivia on one iPhone</title>
-  <meta name="description" content="Trivia Duo is a two-player trivia game for iPhone Duo and iPhone. Sit face to face, share one phone, and race to the correct answer. Plays fully offline.">
-  <link rel="canonical" href="https://triviaduo.com/">
-  <meta name="theme-color" content="#090b10">
+  <title>Trivia Duo — two players, one iPhone, first tap scores</title>
+  <meta name="description" content="Trivia Duo is a two-player trivia game for iPhone Duo and iPhone. Both sides see the same question. The first correct tap scores; a wrong tap locks you out. Works offline. No account.">
+  <link rel="canonical" href="https://erdtheturd.github.io/triviaduo/">
+  <meta name="theme-color" content="#0c0e14">
+
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Trivia Duo">
   <meta property="og:locale" content="en_US">
-  <meta property="og:url" content="https://triviaduo.com/">
-  <meta property="og:title" content="Trivia Duo — head-to-head trivia on one iPhone">
-  <meta property="og:description" content="Two players, one phone, face to face. A trivia match for iPhone Duo and iPhone. Plays fully offline.">
-  <meta property="og:image" content="https://triviaduo.com/assets/favicon.svg">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Trivia Duo — head-to-head trivia on one iPhone">
-  <meta name="twitter:description" content="Two players, one phone, face to face. Plays fully offline.">
+  <meta property="og:url" content="https://erdtheturd.github.io/triviaduo/">
+  <meta property="og:title" content="Trivia Duo — two players, one iPhone, first tap scores">
+  <meta property="og:description" content="Sit face to face over one iPhone. Same question, both sides. First correct tap scores. Plays offline.">
+  <meta property="og:image" content="https://erdtheturd.github.io/triviaduo/assets/game.png">
+  <meta property="og:image:alt" content="Trivia Duo on iPhone, split so two players sit opposite each other">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trivia Duo — two players, one iPhone, first tap scores">
+  <meta name="twitter:description" content="Sit face to face over one iPhone. Same question, both sides. First correct tap scores. Plays offline.">
+  <meta name="twitter:image" content="https://erdtheturd.github.io/triviaduo/assets/game.png">
+
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <nav class="nav wrap" aria-label="Primary">
+    <nav class="nav" aria-label="Primary">
       <a class="brand" href="./" aria-current="page">
         <img class="brand-mark" src="assets/favicon.svg" width="28" height="28" alt="">
         <span>Trivia Duo</span>
       </a>
       <ul class="nav-links">
         <li><a href="./" aria-current="page">Home</a></li>
-        <li><a href="#how">How it works</a></li>
         <li><a href="privacy.html">Privacy</a></li>
         <li><a href="support.html">Support</a></li>
       </ul>
@@ -40,102 +45,95 @@
 
   <main id="main">
     <section class="hero">
-      <div class="wrap hero-inner">
-        <div>
-          <p class="eyebrow">Trivia Duo</p>
-          <h1>Head-to-head trivia, face to face on one iPhone.</h1>
-          <p class="lede">Two players share one phone and race to the same question. On iPhone Duo, each of you gets your own screen. On a regular iPhone, the screen splits in half and the top half turns to face the other player.</p>
-          <p class="device-note">For iPhone Duo and iPhone. Plays fully offline.</p>
+      <div class="hero-wash">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <div class="sides" aria-hidden="true">
+              <span class="a">Player A</span>
+              <span class="b">Player B</span>
+            </div>
+            <p class="wordmark">Trivia Duo</p>
+            <h1>First correct tap scores the point.</h1>
+            <p class="lede">Two people, one iPhone, sitting opposite each other. Both of you see the same question and the same four answers.</p>
+          </div>
+
+          <figure class="phone" aria-label="Trivia Duo during a match, on a regular iPhone.">
+            <img src="assets/game.png" alt="Trivia Duo game screen. The phone is split in half: the top half is rotated 180 degrees for the other player. Both sides show the question “What is the capital of Australia?” with answers Sydney, Canberra, Melbourne, and Perth, and a score of 4 to 3 in round 8 of 10." width="1206" height="2622">
+          </figure>
+
+          <div class="hero-aside">
+            <p>On iPhone Duo, each of you gets your own screen. On a regular iPhone, the display splits in half and the top half turns 180°.</p>
+          </div>
         </div>
-        <figure class="device" aria-label="Illustration of a face-to-face trivia match. Not a product screenshot.">
-          <div class="device-chrome">
-            <strong>Face to face</strong>
-            <span>Illustration</span>
-          </div>
-          <div class="face-stage">
-            <div class="pane pane-top">
-              <p class="pane-label">Player B</p>
-              <p class="q">What is the capital of Australia?</p>
-              <div class="answers">
-                <p class="chip">Sydney</p>
-                <p class="chip">Canberra</p>
-                <p class="chip">Melbourne</p>
-                <p class="chip">Perth</p>
-              </div>
-            </div>
-            <div class="hinge" aria-hidden="true"></div>
-            <div class="pane pane-bottom">
-              <p class="pane-label">Player A</p>
-              <p class="q">What is the capital of Australia?</p>
-              <div class="answers">
-                <p class="chip">Sydney</p>
-                <p class="chip">Canberra</p>
-                <p class="chip">Melbourne</p>
-                <p class="chip">Perth</p>
-              </div>
-            </div>
-          </div>
-          <figcaption class="caption">An illustration of the split, face-to-face layout — not a screenshot of the app.</figcaption>
-        </figure>
       </div>
+      <p class="wrap shot-caption">A real shot of the game on iPhone — not a drawing. The top half is rotated so the person across from you can read it.</p>
     </section>
 
-    <section id="how">
+    <section class="match" id="match">
       <div class="wrap">
-        <h2>How it works</h2>
-        <div class="steps">
-          <article class="card">
-            <span class="step-num">01</span>
-            <h3>Pick a category and a length</h3>
-            <p>Choose all categories or one of six: General, Science, Geography, History, Sports, and Movies &amp; Music. Play 5, 10, or 15 rounds.</p>
-          </article>
-          <article class="card">
-            <span class="step-num">02</span>
-            <h3>Sit opposite each other</h3>
-            <p>On iPhone Duo, each player uses their own screen. On a regular iPhone, hold the phone between you: your half faces you, the other half is rotated 180°.</p>
-          </article>
-          <article class="card">
-            <span class="step-num">03</span>
-            <h3>Race to the right answer</h3>
-            <p>Both of you see the same question and the same four answers. The first correct tap scores the point. A wrong tap locks that player out of the question.</p>
-          </article>
+        <div class="match-head">
+          <h2>A match, from both seats.</h2>
+          <p>You pick the category and the length. Then the board turns to face both of you.</p>
+        </div>
+        <div class="boards">
+          <figure class="board board--a">
+            <div class="phone phone-sm">
+              <img src="assets/home.png" alt="Trivia Duo home screen, titled Trivia Duo, with a category picker, a 5, 10, or 15 round selector, and a Start button." width="1206" height="2622">
+            </div>
+            <figcaption>
+              <span class="label">Home</span>
+              Choose all six categories or one of them — General, Science, Geography, History, Sports, or Movies &amp; Music — and play 5, 10, or 15 rounds.
+            </figcaption>
+          </figure>
+          <figure class="board board--b">
+            <div class="phone phone-sm">
+              <img src="assets/results.png" alt="Trivia Duo winner screen, split face to face, showing Player A wins 6 to 4, with Rematch and Back to Home buttons on both sides." width="1206" height="2622">
+            </div>
+            <figcaption>
+              <span class="label">Winner</span>
+              After the last round, both sides show the score. Rematch uses the same settings with a fresh draw. Ties are called as ties.
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="rules" id="rules" aria-labelledby="rules-title">
       <div class="wrap">
-        <h2>Features</h2>
-        <div class="features">
-          <article class="card">
-            <h3>Made for two</h3>
-            <p>A face-to-face layout that adapts to iPhone Duo and to a regular iPhone, with a scoreboard on both sides and a rematch when the last round ends.</p>
-          </article>
-          <article class="card">
-            <h3>Plays offline</h3>
-            <p>Questions ship with the app. There is no account, no internet connection required, and no live content feed.</p>
-          </article>
-          <article class="card">
-            <h3>A starter question bank</h3>
-            <p>Sixty questions across six categories, written as well-established, unambiguous facts that do not depend on current events.</p>
-          </article>
-          <article class="card">
-            <h3>Clear, focused play</h3>
-            <p>After someone scores — or both players miss — the correct answer is revealed briefly before the next question. Ties are called as ties.</p>
-          </article>
+        <div class="rules-head">
+          <h2 id="rules-title">How a question is scored</h2>
+          <p>The rules are the same on both sides of the phone.</p>
         </div>
+        <ul class="rule-list">
+          <li>
+            <h3>Same question</h3>
+            <p>Each player sees the same prompt and the same four answers, in the same order.</p>
+          </li>
+          <li>
+            <h3>First correct tap</h3>
+            <p>The first player to hit the right answer scores the point. The correct answer is then shown briefly, and the next question starts.</p>
+          </li>
+          <li>
+            <h3>A miss locks you out</h3>
+            <p>A wrong tap locks that player out of the question. The other player can still answer. If both miss, nobody scores.</p>
+          </li>
+          <li>
+            <h3>Sixty questions, offline</h3>
+            <p>The question bank ships in the app: ten facts in each of the six categories. There is no account, no live feed, and no personal data collected.</p>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p>Trivia Duo</p>
-      <ul class="footer-links">
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a href="mailto:support@triviaduo.com">support@triviaduo.com</a></li>
-      </ul>
+      <p>&copy; 2026 Edward Dunn. Trivia Duo for iPhone.</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:support@triviaduo.com">support@triviaduo.com</a>
+      </div>
     </div>
   </footer>
 </body>
